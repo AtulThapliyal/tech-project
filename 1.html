@@ -12,6 +12,52 @@
             background-color: green;
             color: azure;
         }
+        .container {
+            height: 100px;
+            width: auto;
+            margin-top: 20px ;
+            border: 1px solid black;
+            display: flex;
+            
+            /* justify-content: flex-end; */
+            align-items:stretch;
+
+            
+        }
+        .container .f{
+            border: 1px solid black;
+            height: 100px;
+            width: 60px;
+            order: 0;
+            flex-grow: 1;
+        }
+
+        .container .s{
+            border: 1px solid black;
+            height: 100px;
+            width: 60px;
+            flex-grow: 1;
+        }
+        .container .t{
+            border: 1px solid black;
+            height: 100px;
+            width: 60px;
+            flex-grow: 1;
+            
+        }
+        .container  .fo{
+            border: 1px solid black;
+            height: 100px;
+            width: 60px;
+            flex-grow: 1;
+        }
+        .container .fif{
+            border: 1px solid black;
+            height: 100px;
+            width: 60px;
+            flex-grow: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -19,15 +65,13 @@
         <h1>Welcome to My Homepage</h1>
         <h3>Use the menu to select</h3>
     </div>
-    <div class="style">
-        <h2> Same page Different Stylesheets </h2>
-        <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
-        <a href="">Stylesheet1</a>
-        <a href="">Stylesheet2</a>
-        <a href="">Stylesheet3</a>
-        <a href="">Stylesheet4</a>
-        <a href=""></a>
-
+    <div class="container">
+        <div class="f">f</div>
+        <div class="s">s</div>
+        <div class="t">t</div>
+        <div class="fo">fo</div>
+        <div class="fif">fif</div>
     </div>
+
 </body>
 </html>
