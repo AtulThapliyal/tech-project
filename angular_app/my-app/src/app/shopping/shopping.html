@@ -1,0 +1,13 @@
+<input type="text" placeholder="Enter shopping items" #item_name />
+
+<button type="button" name="Add item" (click)="add_item(item_name.value)">
+Add item
+</button>
+<!-- <div class="items"> -->
+<div  ></div>
+<ul>
+<app-shopping_item *ngFor="let item of shopping" [inputdata] = "item"></app-shopping_item>
+</ul>
+<!-- </div> -->
+
+
