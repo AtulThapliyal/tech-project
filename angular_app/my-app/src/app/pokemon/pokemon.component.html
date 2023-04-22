@@ -1,3 +1,9 @@
-<div class="list" *ngFor = "let data of poke">
-    {{data.name}},{{data.url}}
-  </div> 
+<div class="list">
+  <input type="text" placeholder="Enter vehicle number " #vehicle_no />
+  <input type="text" placeholder="Enter size" #size/>
+  <input type="text" placeholder="Enter brand" #brand />
+  <input type="text" placeholder="Enter model" #model/>
+
+  <button type="button" name="Add item" (click)="add_vehicle(vehicle_no.value,size.value,brand.value,model.value)">Add item </button>
+  {{mess}}
+</div> 

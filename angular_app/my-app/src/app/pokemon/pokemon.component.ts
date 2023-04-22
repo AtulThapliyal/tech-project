@@ -8,13 +8,23 @@ import{api_service} from "../service/api_service"
 })
 export class pokemon_component implements OnInit{
     poke : any= [];
+    mess = "";
+
     constructor(private api: api_service){
         
     }
 
     ngOnInit(): void {
-        this.api.get_data().subscribe(data => {
-            this.poke = data.results
+        // this.api.add_driver().subscribe(data => {
+        //     console.log(data)
+        // })
+    }
+
+    public add_vehicle(name: string,size: string, brand: string,model: string){
+
+        this.api.add_vehicle(name,size, brand,model).subscribe(data => {
+            this.mess= data.message;
+            
             console.log(data)
         })
     }
